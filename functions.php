@@ -54,15 +54,15 @@ function _tk_setup() {
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
 	 * If you're building a theme based on _tk, use a find and replace
-	 * to change '_tk' to the name of your theme in all the template files
+	 * to change 'verapdf' to the name of your theme in all the template files
 	*/
-	load_theme_textdomain( '_tk', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'verapdf', get_template_directory() . '/languages' );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
 	*/
 	register_nav_menus( array(
-		'primary'  => __( 'Header bottom menu', '_tk' ),
+		'primary'  => __( 'Header bottom menu', 'verapdf' ),
 	) );
 
 }
@@ -74,7 +74,7 @@ add_action( 'after_setup_theme', '_tk_setup' );
  */
 function _tk_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', '_tk' ),
+		'name'          => __( 'Sidebar', 'verapdf' ),
 		'id'            => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
