@@ -13,7 +13,7 @@
 	<?php } // if ( ! empty( $header_image ) ) ?>
 
  *
- * @package _tk
+ * @package Verapdf
  */
 
 /**
@@ -23,7 +23,7 @@
  * @uses verapdf_admin_header_style()
  * @uses verapdf_admin_header_image()
  *
- * @package _tk
+ * @package Verapdf
  */
 function verapdf_custom_header_setup() {
 	if ( function_exists( 'add_theme_support' ) ) {

@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package _tk
+ * @package Verapdf
  */
 
 if ( ! function_exists( 'verapdf_content_nav' ) ) :

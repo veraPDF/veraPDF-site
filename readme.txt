@@ -1,8 +1,8 @@
-Theme Name: _tk
+Theme Name: Verapdf
 Theme URI: http://themekraft.com/store/_tk-free-wordpress-starter-theme-based-on-twitter-bootstrap/
 Author: ThemeKraft
 Author URI: http://themekraft.com/
-Description: Hi, I am the ultra minimal starter theme _tk, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress. You can find me on GitHub. Fork me! I'm waiting for you ;)
+Description: Hi, I am the ultra minimal starter theme Verapdf, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress. You can find me on GitHub. Fork me! I'm waiting for you ;)
 Version: 1.1.9
 License: GNU General Public License v3.0 /
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -42,12 +42,12 @@ Credits:
 
 *************************************************************
 
-The _tk Project on Github - https://github.com/Themekraft/_tk/
+The Verapdf Project on Github - https://github.com/Themekraft/_tk/
 
 *************************************************************
 
 
-Thanks for using _tk Theme.
+Thanks for using Verapdf Theme.
 We hope you enjoy it!
 
 *************************************************************

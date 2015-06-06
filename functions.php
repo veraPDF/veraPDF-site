@@ -1,8 +1,8 @@
 <?php
 /**
- * _tk functions and definitions
+ * Verapdf functions and definitions
  *
- * @package _tk
+ * @package Verapdf
  */
 
 /**
@@ -53,7 +53,7 @@ function verapdf_setup() {
 	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
-	 * If you're building a theme based on _tk, use a find and replace
+	 * If you're building a theme based on Verapdf, use a find and replace
 	 * to change 'verapdf' to the name of your theme in all the template files
 	*/
 	load_theme_textdomain( 'verapdf', get_template_directory() . '/languages' );
@@ -98,7 +98,7 @@ function verapdf_scripts() {
 	// load Font Awesome css
 	wp_enqueue_style( '_tk-font-awesome', get_template_directory_uri() . '/includes/css/font-awesome.min.css', false, '4.1.0' );
 
-	// load _tk styles
+	// load Verapdf styles
 	wp_enqueue_style( '_tk-style', get_stylesheet_uri() );
 
 	// load bootstrap js

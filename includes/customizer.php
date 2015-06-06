@@ -1,8 +1,8 @@
 <?php
 /**
- * _tk Theme Customizer
+ * Verapdf Theme Customizer
  *
- * @package _tk
+ * @package Verapdf
  */
 
 /**

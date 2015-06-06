@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying search forms in _tk
+ * The template for displaying search forms in Verapdf
  *
- * @package _tk
+ * @package Verapdf
  */
 ?>
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
