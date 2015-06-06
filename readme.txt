@@ -1,5 +1,5 @@
 Theme Name: Verapdf
-Theme URI: http://themekraft.com/store/_tk-free-wordpress-starter-theme-based-on-twitter-bootstrap/
+Theme URI: http://themekraft.com/store/verapdf-free-wordpress-starter-theme-based-on-twitter-bootstrap/
 Author: ThemeKraft
 Author URI: http://themekraft.com/
 Description: Hi, I am the ultra minimal starter theme Verapdf, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress. You can find me on GitHub. Fork me! I'm waiting for you ;)
