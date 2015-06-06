@@ -7,11 +7,11 @@
  * @package _tk
  */
 
-if ( ! function_exists( '_tk_content_nav' ) ) :
+if ( ! function_exists( 'verapdf_content_nav' ) ) :
 /**
  * Display navigation to next/previous pages when applicable
  */
-function _tk_content_nav( $nav_id ) {
+function verapdf_content_nav( $nav_id ) {
 	global $wp_query, $post;
 
 	// Don't print empty markup on single pages if there's nowhere to navigate.
@@ -55,15 +55,15 @@ function _tk_content_nav( $nav_id ) {
 	</nav><!-- #<?php echo esc_html( $nav_id ); ?> -->
 	<?php
 }
-endif; // _tk_content_nav
+endif; // verapdf_content_nav
 
-if ( ! function_exists( '_tk_comment' ) ) :
+if ( ! function_exists( 'verapdf_comment' ) ) :
 /**
  * Template for comments and pingbacks.
  *
  * Used as a callback by wp_list_comments() for displaying the comments.
  */
-function _tk_comment( $comment, $args, $depth ) {
+function verapdf_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 
 	if ( 'pingback' == $comment->comment_type || 'trackback' == $comment->comment_type ) : ?>
@@ -124,15 +124,15 @@ function _tk_comment( $comment, $args, $depth ) {
 	<?php
 	endif;
 }
-endif; // ends check for _tk_comment()
+endif; // ends check for verapdf_comment()
 
-if ( ! function_exists( '_tk_the_attached_image' ) ) :
+if ( ! function_exists( 'verapdf_the_attached_image' ) ) :
 /**
  * Prints the attached image with a link to the next attached image.
  */
-function _tk_the_attached_image() {
+function verapdf_the_attached_image() {
 	$post                = get_post();
-	$attachment_size     = apply_filters( '_tk_attachment_size', array( 1200, 1200 ) );
+	$attachment_size     = apply_filters( 'verapdf_attachment_size', array( 1200, 1200 ) );
 	$next_attachment_url = wp_get_attachment_url();
 
 	/**
@@ -178,11 +178,11 @@ function _tk_the_attached_image() {
 }
 endif;
 
-if ( ! function_exists( '_tk_posted_on' ) ) :
+if ( ! function_exists( 'verapdf_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
-function _tk_posted_on() {
+function verapdf_posted_on() {
 	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
 
 	$time_string = sprintf( $time_string,
@@ -224,7 +224,7 @@ endif;
 /**
  * Returns true if a blog has more than 1 category
  */
-function _tk_categorized_blog() {
+function verapdf_categorized_blog() {
 	if ( false === ( $all_the_cool_cats = get_transient( 'all_the_cool_cats' ) ) ) {
 		// Create an array of all the categories that are attached to posts
 		$all_the_cool_cats = get_categories( array(
@@ -238,20 +238,20 @@ function _tk_categorized_blog() {
 	}
 
 	if ( '1' != $all_the_cool_cats ) {
-		// This blog has more than 1 category so _tk_categorized_blog should return true
+		// This blog has more than 1 category so verapdf_categorized_blog should return true
 		return true;
 	} else {
-		// This blog has only 1 category so _tk_categorized_blog should return false
+		// This blog has only 1 category so verapdf_categorized_blog should return false
 		return false;
 	}
 }
 
 /**
- * Flush out the transients used in _tk_categorized_blog
+ * Flush out the transients used in verapdf_categorized_blog
  */
-function _tk_category_transient_flusher() {
+function verapdf_category_transient_flusher() {
 	// Like, beat it. Dig?
 	delete_transient( 'all_the_cool_cats' );
 }
-add_action( 'edit_category', '_tk_category_transient_flusher' );
-add_action( 'save_post',     '_tk_category_transient_flusher' );
+add_action( 'edit_category', 'verapdf_category_transient_flusher' );
+add_action( 'save_post',     'verapdf_category_transient_flusher' );

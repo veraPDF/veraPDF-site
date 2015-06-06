@@ -11,7 +11,7 @@
 if ( ! isset( $content_width ) )
 	$content_width = 750; /* pixels */
 
-if ( ! function_exists( '_tk_setup' ) ) :
+if ( ! function_exists( 'verapdf_setup' ) ) :
 /**
  * Set up theme defaults and register support for various WordPress features.
  *
@@ -19,7 +19,7 @@ if ( ! function_exists( '_tk_setup' ) ) :
  * before the init hook. The init hook is too late for some features, such as indicating
  * support post thumbnails.
  */
-function _tk_setup() {
+function verapdf_setup() {
 	global $cap, $content_width;
 
 	// This theme styles the visual editor with editor-style.css to match the theme style.
@@ -45,7 +45,7 @@ function _tk_setup() {
 	/**
 	 * Setup the WordPress core custom background feature.
 	*/
-	add_theme_support( 'custom-background', apply_filters( '_tk_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'verapdf_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
@@ -66,13 +66,13 @@ function _tk_setup() {
 	) );
 
 }
-endif; // _tk_setup
-add_action( 'after_setup_theme', '_tk_setup' );
+endif; // verapdf_setup
+add_action( 'after_setup_theme', 'verapdf_setup' );
 
 /**
  * Register widgetized area and update sidebar with default widgets
  */
-function _tk_widgets_init() {
+function verapdf_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'verapdf' ),
 		'id'            => 'sidebar-1',
@@ -82,12 +82,12 @@ function _tk_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
 }
-add_action( 'widgets_init', '_tk_widgets_init' );
+add_action( 'widgets_init', 'verapdf_widgets_init' );
 
 /**
  * Enqueue scripts and styles
  */
-function _tk_scripts() {
+function verapdf_scripts() {
 
 	// Import the necessary TK Bootstrap WP CSS additions
 	wp_enqueue_style( '_tk-bootstrap-wp', get_template_directory_uri() . '/includes/css/bootstrap-wp.css' );
@@ -118,7 +118,7 @@ function _tk_scripts() {
 	}
 
 }
-add_action( 'wp_enqueue_scripts', '_tk_scripts' );
+add_action( 'wp_enqueue_scripts', 'verapdf_scripts' );
 
 /**
  * Implement the Custom Header feature.

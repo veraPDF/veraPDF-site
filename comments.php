@@ -4,7 +4,7 @@
  *
  * The area of the page that contains both current comments
  * and the comment form. The actual display of comments is
- * handled by a callback to _tk_comment() which is
+ * handled by a callback to verapdf_comment() which is
  * located in the includes/template-tags.php file.
  *
  * @package _tk
@@ -46,12 +46,12 @@ if ( post_password_required() )
 		<ol class="comment-list media-list">
 			<?php
 				/* Loop through and list the comments. Tell wp_list_comments()
-				 * to use _tk_comment() to format the comments.
+				 * to use verapdf_comment() to format the comments.
 				 * If you want to overload this in a child theme then you can
-				 * define _tk_comment() and that will be used instead.
-				 * See _tk_comment() in includes/template-tags.php for more.
+				 * define verapdf_comment() and that will be used instead.
+				 * See verapdf_comment() in includes/template-tags.php for more.
 				 */
-				wp_list_comments( array( 'callback' => '_tk_comment', 'avatar_size' => 50 ) );
+				wp_list_comments( array( 'callback' => 'verapdf_comment', 'avatar_size' => 50 ) );
 			?>
 		</ol><!-- .comment-list -->
 
