@@ -65,6 +65,9 @@ function verapdf_setup() {
 		'primary'  => __( 'Header bottom menu', 'verapdf' ),
 	) );
 
+	// Disable to admin bar
+	add_filter('show_admin_bar', '__return_false');
+
 }
 endif; // verapdf_setup
 add_action( 'after_setup_theme', 'verapdf_setup' );
