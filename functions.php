@@ -49,7 +49,7 @@ function verapdf_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
-	
+
 	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
@@ -104,11 +104,16 @@ function verapdf_scripts() {
 	// load Verapdf styles
 	wp_enqueue_style( 'verapdf-style', get_stylesheet_uri() );
 
-	// load bootstrap js
-	wp_enqueue_script('verapdf-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.min.js', array('jquery') );
-
+	// Override JQuery and load after page footer
+	if( !is_admin()){
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', ("https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"), false, '1.11.3', true);
+		wp_enqueue_script('jquery');
+	}
+	// load bootstrap js after page footer
+	wp_enqueue_script('verapdf-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.min.js', array('jquery'), '1.11.3', true );
 	// load bootstrap wp js
-	wp_enqueue_script( 'verapdf-bootstrapwp', get_template_directory_uri() . '/includes/js/bootstrap-wp.js', array('jquery') );
+	wp_enqueue_script( 'verapdf-bootstrapwp', get_template_directory_uri() . '/includes/js/bootstrap-wp.js', array('jquery'), '1.11.3', true );
 
 	wp_enqueue_script( 'verapdf-skip-link-focus-fix', get_template_directory_uri() . '/includes/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -117,7 +122,7 @@ function verapdf_scripts() {
 	}
 
 	if ( is_singular() && wp_attachment_is_image() ) {
-		wp_enqueue_script( 'verapdf-keyboard-image-navigation', get_template_directory_uri() . '/includes/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
+		wp_enqueue_script( 'verapdf-keyboard-image-navigation', get_template_directory_uri() . '/includes/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202', true );
 	}
 
 }
