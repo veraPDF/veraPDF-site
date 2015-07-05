@@ -8,17 +8,21 @@
  */
 get_header(); ?>
           <div class="inner cover">
-            <h1 class="cover-heading">The definitive ISO 19005 (PDF/A) validator.</h1>
-            <a href="http://verapdf.org/" title="veraPDF" rel="home">
-						  <img src="http://verapdf.openpreservation.org/wp-content/uploads/sites/3/2015/06/veraPDF-logo-200.png" width="200" height="100" alt="">
-						</a>
+            <h1><?php echo get_post_meta(get_option('page_on_front'), 'tag-line', true); ?></h1>
+            <?php $header_image = get_header_image();
+            if ( ! empty( $header_image ) ) { ?>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+              </a>
+            <?php } // end if ( ! empty( $header_image ) ) ?>
             <p class="lead">
-              Designed to meet the needs of digital preservationists and supported
-              by leading members of the PDF software developer community, veraPDF
-              is a purpose-built, open source, file-format validator covering all
-              PDF/A parts and conformance levels.</p>
+            <?php
+              $post = get_post(get_option('page_on_front'));
+              echo $post->post_content;
+            ?>
+            </p>
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+              <a href="<?php echo verapdf_get_verapage_url(); ?>" class="btn btn-lg btn-default">Learn more</a>
             </p>
           </div>
 <?php get_footer(); ?>

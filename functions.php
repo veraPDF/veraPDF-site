@@ -158,6 +158,11 @@ require get_template_directory() . '/includes/template-tags.php';
 require get_template_directory() . '/includes/extras.php';
 
 /**
+ * Custom veraPDF functions
+ */
+require get_template_directory() . '/includes/vera-extras.php';
+
+/**
  * Customizer additions.
  */
 require get_template_directory() . '/includes/customizer.php';

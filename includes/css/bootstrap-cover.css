@@ -90,15 +90,16 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
+  color: rgba(255,255,255,.90);
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
-  color: #D0404F;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
+  color: #D0404F; /* IE8 proofing */
+  color: rgba(208,64,79,.95);
+  border-bottom-color: #D0404F;
+  border-bottom-color: rgba(208,64,79,.80);
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
