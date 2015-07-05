@@ -257,3 +257,9 @@ display: block;
 */
 
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
+
+/* veraPDF Extras */
+.navbar-brand {
+	/* No lefft padding for menu brand */
+	padding-left: 0;
+}
