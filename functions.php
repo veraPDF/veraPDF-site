@@ -104,14 +104,21 @@ function verapdf_scripts() {
 	// load Verapdf styles
 	wp_enqueue_style( 'verapdf-style', get_stylesheet_uri() );
 
+	// Load special front page css
+	if ( is_front_page() ) {
+		wp_enqueue_style( 'verapdf-cover', get_template_directory_uri() . '/includes/resources/bootstrap/css/bootstrap-cover.css' );
+	}
+
 	// Override JQuery and load after page footer
-	if( !is_admin()){
+	if( !is_admin() ){
 		wp_deregister_script('jquery');
 		wp_register_script('jquery', ("https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"), false, '1.11.3', true);
 		wp_enqueue_script('jquery');
 	}
+
 	// load bootstrap js after page footer
 	wp_enqueue_script('verapdf-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.min.js', array('jquery'), '1.11.3', true );
+
 	// load bootstrap wp js
 	wp_enqueue_script( 'verapdf-bootstrapwp', get_template_directory_uri() . '/includes/js/bootstrap-wp.js', array('jquery'), '1.11.3', true );
 
