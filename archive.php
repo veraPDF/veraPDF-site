@@ -97,5 +97,7 @@ get_header(); ?>
 
 	</div><!-- .content-padder -->
 
-<?php get_sidebar(); ?>
+	<?php
+	// Disabled sidebars 5/7/2015
+	// get_sidebar(); ?>
 <?php get_footer(); ?>
