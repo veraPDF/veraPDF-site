@@ -131,7 +131,8 @@ function verapdf_scripts() {
 	if ( is_singular() && wp_attachment_is_image() ) {
 		wp_enqueue_script( 'verapdf-keyboard-image-navigation', get_template_directory_uri() . '/includes/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202', true );
 	}
-
+	// Fix for MS surface
+	wp_enqueue_script( '', get_template_directory_uri() . '/includes/js/ie10-viewport-bug-workaround.js', array(), '', true);
 }
 add_action( 'wp_enqueue_scripts', 'verapdf_scripts' );
 
