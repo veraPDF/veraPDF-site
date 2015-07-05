@@ -20,9 +20,7 @@
 
 				<div class="site-info">
 					<?php do_action( 'verapdf_credits' ); ?>
-					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'verapdf' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'verapdf' ), 'WordPress' ); ?></a>
-					<span class="sep"> | </span>
-                    <a class="credits" href="http://themekraft.com/" target="_blank" title="Themes and Plugins developed by Themekraft" alt="Themes and Plugins developed by Themekraft"><?php _e('Themes and Plugins developed by Themekraft.','verapdf') ?> </a>
+					<span><?php _e('Copyright &copy; 2015 veraPDF consortium','verapdf') ?></span>
 				</div><!-- close .site-info -->
 
 			</div>
