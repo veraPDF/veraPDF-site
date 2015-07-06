@@ -15,8 +15,10 @@
           <h3 class="masthead-brand">veraPDF</h3>
           <nav>
             <ul class="nav masthead-nav">
-              <li><a href="<?php echo verapdf_get_features_url(); ?>">Features</a></li>
-              <li><a href="<?php echo verapdf_get_contact_url(); ?>">Contact</a></li>
+              <li><a href="<?php echo get_permalink( get_page_by_path( 'verapdf' ) ) . '/#validation'; ?>">PDF/A Validation</a></li>
+              <li><a href="<?php echo get_permalink( get_page_by_path( 'verapdf' ) ) . '/#licensing'; ?>">Licensing</a></li>
+              <li><a href="<?php echo get_permalink( get_page_by_path( 'verapdf' ) ) . '/#about'; ?>">About</a></li>
+              <li><a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>">Contact</a></li>
             </ul>
           </nav>
         </div>
