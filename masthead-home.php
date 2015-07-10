@@ -30,7 +30,7 @@
       			<div class="row mask showcase">
       				<div class="container">
       				<div class="col-lg-4">
-      					<i class="active fa fa-check-circle fa-5x"></i>
+                <i class="fa fa-check-circle fa-5x"></i>
       					<h2>PDF/A Validation</h2>
       					<p>
       						veraPDF software will provide validation of all PDF/A parts &amp; conformance levels.

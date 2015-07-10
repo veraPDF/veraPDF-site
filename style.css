@@ -285,8 +285,15 @@ header.site-navigation .container {
 	text-align: left;
 }
 
-.showcase i {
+.showcase i, .showcase .btn {
 	color: #ABE188;
+	background: none;
+}
+
+.showcase .btn:hover,
+.showcase .btn:focus {
+	background-color: #ABE188;
+	color: #fff;
 }
 
 .showcase div {
@@ -335,3 +342,5 @@ div.mce_inline_error {
 	text-align: right;
 	padding-right: 15px;
 }
+
+.showcase .btn-info
