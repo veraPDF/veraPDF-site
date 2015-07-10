@@ -304,3 +304,34 @@ header.site-navigation .container {
 .site-footer {
 	text-align: center;
 }
+
+/* Custom default button */
+.btn,
+.btn:hover,
+.btn:focus {
+  text-shadow: none; /* Prevent inheritence from `body` */
+  border: 2px solid;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+}
+
+label i.fa-asterisk,
+.indicates-required i.fa-asterisk {
+	color: #D0404F;
+}
+
+.indicates-required {
+	padding-top: 5px;
+	padding-bottom: 5px;
+  padding-right: 24px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+div.mce_inline_error {
+	background: none;
+	color: #D0404F;
+	text-align: right;
+	padding-right: 15px;
+}
