@@ -285,15 +285,8 @@ header.site-navigation .container {
 	text-align: left;
 }
 
-.showcase i, .showcase .btn {
+.showcase i, .showcase a:link {
 	color: #ABE188;
-	background: none;
-}
-
-.showcase .btn:hover,
-.showcase .btn:focus {
-	background-color: #ABE188;
-	color: #fff;
 }
 
 .showcase div {
@@ -323,6 +316,24 @@ header.site-navigation .container {
           border-radius: 10px;
 }
 
+.showcase .btn i {
+	color: #fff;
+}
+.showcase .btn {
+	color: #fff;
+	background: none;
+	border-color: #fff;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.showcase .btn:hover,
+.showcase .btn:focus {
+	background-color: #ABE188;
+	color: #000;
+}
+
 label i.fa-asterisk,
 .indicates-required i.fa-asterisk {
 	color: #D0404F;
@@ -342,5 +353,3 @@ div.mce_inline_error {
 	text-align: right;
 	padding-right: 15px;
 }
-
-.showcase .btn-info
