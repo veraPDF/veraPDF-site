@@ -285,7 +285,7 @@ header.site-navigation .container {
 	text-align: left;
 }
 
-.showcase i, .showcase a:link {
+.showcase a:link {
 	color: #ABE188;
 }
 
@@ -328,9 +328,10 @@ header.site-navigation .container {
           border-radius: 10px;
 }
 
-.showcase .btn i {
-	color: #fff;
+.showcase i.fa-5x {
+	color: #ABE188;
 }
+
 .showcase .btn {
 	color: #fff;
 	background: none;
@@ -340,8 +341,7 @@ header.site-navigation .container {
 	margin-top: 10px;
 }
 
-.showcase .btn:hover,
-.showcase .btn:focus {
+.showcase .btn:hover {
 	background-color: #ABE188;
 	color: #000;
 }
