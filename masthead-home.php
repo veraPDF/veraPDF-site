@@ -39,8 +39,8 @@
   							<h2>Open Licensing</h2>
   							<p>
   								veraPDF is dual-licensed under the GNU General Public License v3 or
-  								later <a href="http://www.gnu.org/licenses/gpl-3.0.en.html" rel="license" title="GNU General Public License v3" lang="en">(GPLv3+)</a> and
-  								Mozilla Public License v2 or later <a href="https://www.mozilla.org/MPL/2.0/" rel="license" title="Mozilla Public License v2.0" lang="en">(MPLv2+)</a>.
+  								later <a href="http://www.gnu.org/licenses/gpl-3.0.en.html" rel="license" title="GNU General Public License v3" hreflang="en">(GPLv3+)</a> and
+  								Mozilla Public License v2 or later <a href="https://www.mozilla.org/MPL/2.0/" rel="license" title="Mozilla Public License v2.0" hreflang="en">(MPLv2+)</a>.
   							</p>
   							<p><a class="btn btn-lg btn-primary" href="#licensing" role="button">Licensing&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a></p>
   						</div>
