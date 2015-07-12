@@ -437,3 +437,12 @@ div.mce_inline_error {
 	text-align: right;
 	padding-right: 15px;
 }
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+	color: #D0404F;
+}
