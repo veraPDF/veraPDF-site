@@ -281,10 +281,13 @@ nav.site-navigation .container {
 	color: #fff;
 	text-align: center;
 }
-
+#masthead .lead {
+  margin: 1.25em 0;
+}
 #masthead .container {
 	padding-bottom: 0;
 }
+
 #masthead .row {
 	padding: 50px 0;
 }
