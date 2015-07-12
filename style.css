@@ -295,7 +295,7 @@ nav.site-navigation .container {
 	text-align: left;
 }
 
-header a {
+header a , header a:hover {
 	color: #ABE188;
 }
 
