@@ -24,7 +24,7 @@ get_header(); ?>
             <nav class="container">
               <div class="row">
                 <div class="col-md-4">
-                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>register" class="btn btn-lg btn-default">Subscribe&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>subscribe" class="btn btn-lg btn-default">Subscribe&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
                 </div>
                 <!-- Add the extra clearfix for only the required viewport -->
                 <div class="clearfix visible-xs-block"></div>
