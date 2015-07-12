@@ -16,7 +16,7 @@
 							<p class="lead">
 							<?php $header_image = get_header_image();
 							if ( ! empty( $header_image ) ) { ?>
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"  alt="The veraPDF logo" title="veraPDF logo">
 									<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
 								</a>
 							<?php } // end if ( ! empty( $header_image ) ) ?>
@@ -39,8 +39,8 @@
   							<h2>Open Licensing</h2>
   							<p>
   								veraPDF is dual-licensed under the GNU General Public License v3 or
-  								later <a href="http://opensource.org/licenses/GPL-3.0">(GPLv3+)</a> and
-  								Mozilla Public License v2 or later <a href="http://opensource.org/licenses/MPL-2.0">(MPLv2+)</a>.
+  								later <a href="http://www.gnu.org/licenses/gpl-3.0.en.html" rel="license" title="GNU General Public License v3" lang="en">(GPLv3+)</a> and
+  								Mozilla Public License v2 or later <a href="https://www.mozilla.org/MPL/2.0/" rel="license" title="Mozilla Public License v2.0" lang="en">(MPLv2+)</a>.
   							</p>
   							<p><a class="btn btn-lg btn-primary" href="#licensing" role="button">Licensing&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a></p>
   						</div>
