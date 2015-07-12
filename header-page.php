@@ -6,6 +6,11 @@
  *
  * @package Verapdf
  */
+$page_id = get_queried_object_id();
+$nav_class = "navbar-brand";
+if ( $page_id == verapdf_get_verapage_id() ) {
+	$nav_class .= " active";
+}
 ?>
 
 	<nav class="site-navigation">
@@ -24,7 +29,7 @@
 							</button>
 
 							<!-- Your site title as branding in the menu -->
-							<a class="navbar-brand" href="<?php echo verapdf_get_verapage_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+							<a class="<?php echo $nav_class; ?>" href="<?php echo verapdf_get_verapage_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 						</div>
 
 						<!-- The WordPress Menu goes here -->
@@ -47,7 +52,7 @@
 		</div><!-- .container -->
 	</nav><!-- .site-navigation -->
 
-	<?php $page_id = get_queried_object_id();
+	<?php
 	get_template_part('masthead', 	$page_id == verapdf_get_verapage_id() ? 'home' : 'page');
 	?>
 
