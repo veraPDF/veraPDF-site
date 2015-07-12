@@ -320,8 +320,19 @@ color: #D0404F;
 #masthead.site-header .row {
 	padding: 2em 0;
 }
+
 #masthead .lead {
   margin: 1.25em 0;
+}
+
+#masthead.page-header {
+	margin: 0;
+	padding: 1em 0;
+	border: none;
+}
+
+#masthead.page-header .lead {
+  margin: 1em 0;
 }
 
 #masthead ul {
