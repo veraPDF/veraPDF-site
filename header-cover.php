@@ -6,6 +6,6 @@
  *
  * @package Verapdf
  */
-?><div class="site-wrapper">
+?><div class="site-wrapper radialmask">
   <div class="site-wrapper-inner">
     <div class="cover-container">

@@ -32,22 +32,9 @@ a:hover {
 html,
 body {
   height: 100%;
-  color: #fff;
-  background-color: #000;
-  background-image: url("../img/vera-pages.jpg");
-}
-
-body {
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  /* Radial gradient for contrast in cover page centre */
-  background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.05) 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0.9)), color-stop(20%,rgba(0,0,0,0.9)), color-stop(100%,rgba(0,0,0,0.05))); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 20%,rgba(0,0,0,0.05) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 20%,rgba(0,0,0,0.05) 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 20%,rgba(0,0,0,0.05) 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 20%,rgba(0,0,0,0.05) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#0d000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-color: #000;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */

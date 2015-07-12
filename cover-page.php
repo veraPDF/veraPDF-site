@@ -8,7 +8,7 @@
  */
 get_header(); ?>
           <div class="inner cover">
-            <header>
+            <header id="masthead">
               <h1><?php echo get_post_meta(get_option('page_on_front'), 'tag-line', true); ?></h1>
               <p class="lead">
                 <?php $header_image = get_header_image();
