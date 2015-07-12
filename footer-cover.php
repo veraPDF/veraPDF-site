@@ -7,12 +7,12 @@
  * @package Verapdf
  */
 ?>
-      <div class="mastfoot">
+      <footer class="mastfoot">
         <div class="inner">
           <?php do_action( 'verapdf_credits' ); ?>
           <span><?php _e('Copyright &copy; 2015 veraPDF consortium','verapdf') ?></span>
         </div>
-      </div>
+      </footer>
 
     </div>
   </div>

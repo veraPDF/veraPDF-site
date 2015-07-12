@@ -11,8 +11,7 @@ a:hover {
 
 /* Custom default button */
 .btn-default,
-.btn-default:hover,
-.btn-default:focus {
+.btn-default:hover {
   margin-bottom: 10px;
   color: #fff;
   text-shadow: none; /* Prevent inheritence from `body` */
@@ -33,12 +32,12 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  color: #fff;
+  background-color: #000;
   background-image: url("../img/vera-pages.jpg");
 }
 
 body {
-  color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   /* Radial gradient for contrast in cover page centre */
@@ -75,62 +74,8 @@ body {
 }
 
 /*
- * Header
+ * Cover Header
  */
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.masthead-nav > li {
-  display: inline-block;
-}
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.90);
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  color: #D0404F; /* IE8 proofing */
-  color: rgba(208,64,79,.95);
-  border-bottom-color: #D0404F;
-  border-bottom-color: rgba(208,64,79,.80);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-color: #D0404F;
-}
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
-}
-
-
-/*
- * Cover
- */
-
 .cover {
   padding: 0 20px;
 }
@@ -139,16 +84,13 @@ color: #D0404F;
   font-weight: bold;
 }
 
-
-/*
- * Footer
- */
-
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+.lead {
+  margin: 1.25em 0;
 }
 
+nav.container {
+  margin-top: 1em;
+}
 
 /*
  * Affix and center
