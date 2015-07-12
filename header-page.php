@@ -8,7 +8,7 @@
  */
 ?>
 
-	<header class="site-navigation">
+	<nav class="site-navigation">
 	<?php // substitute the class "container-fluid" below if you want a wider content area ?>
 		<div class="container">
 			<div class="row">
@@ -45,13 +45,13 @@
 				</div>
 			</div>
 		</div><!-- .container -->
-	</header><!-- .site-navigation -->
+	</nav><!-- .site-navigation -->
 
 	<?php $page_id = get_queried_object_id();
 	get_template_part('masthead', 	$page_id == verapdf_get_verapage_id() ? 'home' : 'page');
 	?>
 
-<div class="main-content">
+<section class="main-content">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">

@@ -7,7 +7,7 @@
  * @package Verapdf
  */
 ?>
-      <div id="masthead" class="site-header" role="banner">
+      <header id="masthead" class="site-header" role="banner">
       <?php // substitute the class "container-fluid" below if you want a wider content area ?>
         <div class="mask">
       		<div class="container-fluid">
@@ -60,4 +60,4 @@
       		</div>
       		</div><!-- .container -->
       	</div><!-- .mask -->
-      </div><!-- #masthead -->
+      </header><!-- #masthead -->
