@@ -58,7 +58,7 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 30px;
+  padding: 1em;
 }
 
 /*
@@ -71,9 +71,8 @@ body {
   padding: 10px 20px;
   font-weight: bold;
 }
-
 nav.container {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 /*
