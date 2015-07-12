@@ -277,19 +277,16 @@ nav.site-navigation {
 nav.site-navigation .container {
 	padding-bottom: 0;
 }
+
 #masthead {
 	color: #fff;
 	text-align: center;
 }
+#masthead.site-header .row {
+	padding: 2em 0;
+}
 #masthead .lead {
   margin: 1.25em 0;
-}
-#masthead .container {
-	padding-bottom: 0;
-}
-
-#masthead .row {
-	padding: 50px 0;
 }
 
 #masthead ul {
