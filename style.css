@@ -272,8 +272,9 @@ nav.site-navigation {
 	/* No lefft padding for menu brand */
 	padding-left: 0;
 }
-.navbar {
+.navbar, .navbar-brand {
 	margin-bottom: 0;
+	font-size: 1.2em;
 }
 nav.site-navigation .container {
 	padding-bottom: 0;
