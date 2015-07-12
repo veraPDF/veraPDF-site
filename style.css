@@ -261,6 +261,7 @@ display: block;
 /* veraPDF Extras */
 body {
 	background-image: url("./includes/img/vera-pages.jpg");
+	background-color: #000;
 }
 
 nav.site-navigation {
@@ -282,6 +283,7 @@ nav.site-navigation .container {
 	color: #fff;
 	text-align: center;
 }
+
 #masthead.site-header .row {
 	padding: 2em 0;
 }
