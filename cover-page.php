@@ -16,17 +16,15 @@ get_header(); ?>
                   <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="The veraPDF logo" title="veraPDF logo">
                 <?php } // end if ( ! empty( $header_image ) ) ?>
               </p>
-              <p class="lead">
-                <?php
-                $post = get_post(get_option('page_on_front'));
-                echo $post->post_content;
-                ?>
-              </p>
+              <?php
+              $post = get_post(get_option('page_on_front'));
+              echo $post->post_content;
+              ?>
             </header>
             <nav class="container">
               <div class="row">
                 <div class="col-md-4">
-                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>register" class="btn btn-lg btn-default">Register&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>register" class="btn btn-lg btn-default">Subscribe&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
                 </div>
                 <!-- Add the extra clearfix for only the required viewport -->
                 <div class="clearfix visible-xs-block"></div>
