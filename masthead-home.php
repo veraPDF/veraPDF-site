@@ -28,8 +28,8 @@
   						<div class="col-lg-4">
   							<i class="fa fa-check-circle fa-5x"></i>
   							<h2>PDF/A Validation</h2>
-  							<p>
-  								veraPDF software will provide validation of all PDF/A parts &amp; conformance levels.
+  							<p class="lead">
+  								veraPDF software will validate all PDF/A parts &amp; conformance levels.
   								Users can define further checks in order to enforce institutional policy.
   							</p>
   							<p><a class="btn btn-lg btn-primary" href="#validation" role="button">Validation&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a></p>
@@ -37,7 +37,7 @@
   						<div class="col-lg-4">
   							<i class="fa fa-legal fa-5x"></i>
   							<h2>Open Licensing</h2>
-  							<p>
+								<p class="lead">
   								veraPDF is dual-licensed under the GNU General Public License v3 or
   								later <a href="http://www.gnu.org/licenses/gpl-3.0.en.html" rel="license" title="GNU General Public License v3" hreflang="en">(GPLv3+)</a> and
   								Mozilla Public License v2 or later <a href="https://www.mozilla.org/MPL/2.0/" rel="license" title="Mozilla Public License v2.0" hreflang="en">(MPLv2+)</a>.
@@ -47,7 +47,7 @@
   						<div class="col-lg-4">
   							<i class="fa fa-info-circle fa-5x"></i>
   							<h2>About veraPDF</h2>
-  							<p>
+								<p class="lead">
   								veraPDF is funded by the European Union&#8217;s <a href="http://www.preforma-project.eu/">PREFORMA</a> project. The contract was awarded to the veraPDF consortium in April, 2015.
   							</p>
   							<p><a class="btn btn-lg btn-primary" href="#about" role="button">About Us&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a></p>
