@@ -13,7 +13,7 @@ if ( $page_id == verapdf_get_verapage_id() ) {
 }
 ?>
 
-	<nav class="site-navigation">
+	<nav class="site-navigation" id="top">
 	<?php // substitute the class "container-fluid" below if you want a wider content area ?>
 		<div class="container">
 			<div class="row">

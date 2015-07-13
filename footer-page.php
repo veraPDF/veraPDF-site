@@ -17,6 +17,9 @@
   <div class="container">
     <div class="row">
       <div class="site-footer-inner col-sm-2">
+        <div class="back-to-top">
+          <a class="back-to-top" href="#top">Back to top</a>
+        </div>
       </div>
       <div class="site-footer-inner col-sm-8">
         <div class="site-info">
