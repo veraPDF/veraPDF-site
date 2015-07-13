@@ -444,6 +444,11 @@ div.mce_inline_error {
 	padding-right: 15px;
 }
 
+
+article a:link {
+	text-decoration: underline;
+}
+
 article h1,
 article h2,
 article h3,
