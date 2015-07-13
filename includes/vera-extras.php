@@ -9,14 +9,14 @@
   * Return the URL of the page with the verapdf slug
   */
  function verapdf_get_verapage_url() {
-   return get_permalink( get_page_by_path( 'verapdf' ) );
+   return get_permalink( get_page_by_path( 'home' ) );
  }
 
  /**
   * Return the URL of the page with the verapdf slug
   */
 function verapdf_get_verapage_id() {
-  $page = get_page_by_path( 'verapdf' );
+  $page = get_page_by_path( 'home' );
   if ($page) {
     return $page->ID;
   } else {
