@@ -196,6 +196,10 @@ function verapdf_posted_on() {
 		$time_string
 	);
 
+	printf( __( '<span class="posted-on">Published on %1$s</span>', 'verapdf' ),
+		$time_string);
+/**
+ * Ignore modified time for now
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ){
 		$time_string_update = '<time class="updated" datetime="%1$s">%2$s</time>';
 		$time_string_update = sprintf( $time_string_update,
@@ -209,7 +213,9 @@ function verapdf_posted_on() {
 		);
 		$time_string .= __(', updated on ', 'verapdf') . $time_string_update;
 	}
-
+	*/
+/**
+ * And rework the tagline
 	printf( __( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', 'verapdf' ),
 		$time_string,
 		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
@@ -217,7 +223,8 @@ function verapdf_posted_on() {
 			esc_attr( sprintf( __( 'View all posts by %s', 'verapdf' ), get_the_author() ) ),
 			esc_html( get_the_author() )
 		)
-	);
+		);
+ */
 }
 endif;
 
