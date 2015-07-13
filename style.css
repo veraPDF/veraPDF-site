@@ -384,6 +384,12 @@ section.main-content {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#0d000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.shadowed {
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+	filter: url(#drop-shadow);
+	-webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+	filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+}
 .site-footer {
 	background-color: #fff;
 	text-align: center;

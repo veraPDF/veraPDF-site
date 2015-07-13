@@ -25,6 +25,14 @@
 					</div><!-- .row -->
 					<div class="row showcase mask">
             <div class="container">
+							<div class="col-lg-4">
+  							<i class="fa fa-info-circle fa-5x"></i>
+  							<h2>About veraPDF</h2>
+								<p class="lead">
+  								veraPDF is a definitive, open source PDF/A validator built with funding form the European Union&#8217;s <a href="http://www.preforma-project.eu/">PREFORMA</a> project.
+  							</p>
+  							<p><a class="btn btn-lg btn-primary" href="#about" role="button">About Us&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a></p>
+  						</div>
   						<div class="col-lg-4">
   							<i class="fa fa-check-circle fa-5x"></i>
   							<h2>PDF/A Validation</h2>
@@ -43,14 +51,6 @@
   								Mozilla Public License v2 or later <a href="https://www.mozilla.org/MPL/2.0/" rel="license" title="Mozilla Public License v2.0" hreflang="en">(MPLv2+)</a>.
   							</p>
   							<p><a class="btn btn-lg btn-primary" href="#licensing" role="button">Licensing&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a></p>
-  						</div>
-  						<div class="col-lg-4">
-  							<i class="fa fa-info-circle fa-5x"></i>
-  							<h2>About veraPDF</h2>
-								<p class="lead">
-  								veraPDF is funded by the European Union&#8217;s <a href="http://www.preforma-project.eu/">PREFORMA</a> project. The contract was awarded to the veraPDF consortium in April, 2015.
-  							</p>
-  							<p><a class="btn btn-lg btn-primary" href="#about" role="button">About Us&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a></p>
   						</div>
             </div><!-- .container -->
           </div><!-- .row -->
