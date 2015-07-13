@@ -466,3 +466,7 @@ section.main-content a > h5,
 section.main-content a > h6 {
 	text-decoration: underline;
 }
+
+p.home {
+  font-size: 16px;
+}
