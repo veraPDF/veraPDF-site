@@ -283,10 +283,9 @@ nav.site-navigation .container {
 }
 .navbar-default .navbar-nav > li {
   navbar: inline-block;
+	margin-right: 20px;
 }
-.navbar-default .navbar-nav > li + li {
-  margin-left: 20px;
-}
+
 a.navbar-brand,
 .navbar-default .navbar-nav > li > a {
   padding-right: 0;
@@ -471,20 +470,10 @@ p.home {
   font-size: 16px;
 }
 
-.navbar-default .navbar-nav > li > a[title="Subscribe"] {
-	font-size: 18px;
-	line-height: 1.33;
-	padding: 8px 16px;
-	margin: 4px 40px;
-	text-shadow: none;
-	text-align: center;
-	border: 2px solid;
-	border-radius: 10px;
-	color: #fff;
-	background-color: #d0404f;
-  border-color: #c63140;
+li.subscribe {
+		float: right;
 }
-.navbar-default .navbar-nav > li > a[title="Subscribe"]:hover {
-	background: #c63140;
-	color: #fff;
+
+a[title="subscribe"] {
+	margin-top: 2px;
 }

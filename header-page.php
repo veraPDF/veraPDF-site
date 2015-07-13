@@ -17,7 +17,7 @@ if ( $page_id == verapdf_get_verapage_id() ) {
 	<?php // substitute the class "container-fluid" below if you want a wider content area ?>
 		<div class="container">
 			<div class="row">
-				<div class="site-navigation-inner col-sm-12">
+				<div class="site-navigation-inner col-sm-10">
 					<div class="navbar navbar-default">
 						<div class="navbar-header">
 							<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
@@ -45,9 +45,11 @@ if ( $page_id == verapdf_get_verapage_id() ) {
 								'walker' 			=> new wp_bootstrap_navwalker()
 							)
 						); ?>
-
 					</div><!-- .navbar -->
 				</div>
+  			<div class="col-sm-2 text-center">
+	  			<a href="http://verapdf.org/subscribe" title="subscribe" class="btn btn-lg btn-warning">Subscribe&nbsp;&nbsp;<i class="fa fa-envelope"></i></a>
+		  	</div>
 			</div>
 		</div><!-- .container -->
 	</nav><!-- .site-navigation -->
