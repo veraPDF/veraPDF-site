@@ -458,11 +458,11 @@ section.main-content h6 {
 	color: #D0404F;
 }
 
-section.main-content a:hover > h1,
-section.main-content a:hover > h2,
-section.main-content a:hover > h3,
-section.main-content a:hover > h4,
-section.main-content a:hover > h5,
-section.main-content a:hover > h6 {
+section.main-content a > h1,
+section.main-content a > h2,
+section.main-content a > h3,
+section.main-content a > h4,
+section.main-content a > h5,
+section.main-content a > h6 {
 	text-decoration: underline;
 }
