@@ -474,6 +474,12 @@ li.subscribe {
 		float: right;
 }
 
-a[title="subscribe"] {
-	margin-top: 2px;
+a[title="subscribe"],
+a[title="subscribe"]:hover {
+	margin-top: 4px;
+	border: none;
+	color: #587B7F;
+}
+a[title="subscribe"]:hover {
+  color: #4e6c70;
 }

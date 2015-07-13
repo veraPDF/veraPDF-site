@@ -48,7 +48,7 @@ if ( $page_id == verapdf_get_verapage_id() ) {
 					</div><!-- .navbar -->
 				</div>
   			<div class="col-sm-2 text-center">
-	  			<a href="http://verapdf.org/subscribe" title="subscribe" class="btn btn-lg btn-warning">Subscribe&nbsp;&nbsp;<i class="fa fa-envelope"></i></a>
+	  			<a href="http://verapdf.org/subscribe" title="subscribe" class="btn btn-lg">Subscribe&nbsp;&nbsp;<i class="fa fa-envelope"></i></a>
 		  	</div>
 			</div>
 		</div><!-- .container -->
