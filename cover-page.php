@@ -14,7 +14,7 @@ get_header(); ?>
                 <p class="lead">
                   <?php $header_image = get_header_image();
                   if ( ! empty( $header_image ) ) { ?>
-                    <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="The veraPDF logo" title="veraPDF logo">
+                    <img  class="shadowed" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="The veraPDF logo" title="veraPDF logo">
                   <?php } // end if ( ! empty( $header_image ) ) ?>
                 </p>
               </div>
