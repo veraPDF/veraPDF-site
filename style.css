@@ -394,6 +394,10 @@ section.main-content {
 	text-align: center;
 }
 
+.cc-info {
+	line-height: 1;
+}
+
 /* Custom default button */
 .btn,
 .btn:hover,
