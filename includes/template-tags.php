@@ -196,7 +196,7 @@ function verapdf_posted_on() {
 		$time_string
 	);
 
-	printf( __( '<span class="posted-on">Published on %1$s</span>', 'verapdf' ),
+	printf( __( '<span class="posted-on"><i class="fa fa-calendar-o"></i> %1$s</span>', 'verapdf' ),
 		$time_string);
 /**
  * Ignore modified time for now
