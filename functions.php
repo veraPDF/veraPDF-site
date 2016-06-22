@@ -104,11 +104,6 @@ function verapdf_scripts() {
 	// load Verapdf styles
 	wp_enqueue_style( 'verapdf-style', get_stylesheet_uri() );
 
-	// Load special front page css
-	if ( is_front_page() ) {
-		wp_enqueue_style( 'verapdf-cover', get_template_directory_uri() . '/includes/css/bootstrap-cover.css' );
-	}
-
 	// Override JQuery and load after page footer
 	if( !is_admin() ){
 		wp_deregister_script('jquery');
