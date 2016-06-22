@@ -228,6 +228,42 @@ function verapdf_posted_on() {
 }
 endif;
 
+if ( ! function_exists( 'verapdf_masthead_title' ) ) :
+/**
+ * Template for masthead title.
+ */
+function verapdf_masthead_title( $masthead_title ) {
+	if ( is_home() ) {
+		$masthead_title = "veraPDF News";
+	} elseif ( is_single() ) {
+		$masthead_title = "veraPDF Article";
+	} elseif ( is_search() ) {
+		$masthead_title = "Search Results";
+	} elseif ( is_404() ) {
+		$masthead_title = "404";
+	}
+	return $masthead_title;
+}
+endif;
+
+if ( ! function_exists( 'verapdf_masthead_lead' ) ) :
+/**
+ * Template for masthead title.
+ */
+function verapdf_masthead_lead( $masthead_lead ) {
+	if ( is_home() ) {
+		$masthead_lead = "Software releases and events.";
+	} elseif ( is_single() ) {
+		$masthead_lead = get_the_title();
+	} elseif ( is_search() ) {
+		$masthead_lead = "We hope you found what you were looking for";
+	} elseif ( is_404() ) {
+		$masthead_lead = "Not known at this location";
+	}
+	return $masthead_lead;
+}
+endif;
+
 /**
  * Returns true if a blog has more than 1 category
  */
