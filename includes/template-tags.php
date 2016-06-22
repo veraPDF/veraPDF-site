@@ -246,6 +246,21 @@ function verapdf_masthead_title( $masthead_title ) {
 }
 endif;
 
+if ( ! function_exists( 'verapdf_news_icon' ) ) :
+/**
+ * Template for masthead title.
+ */
+function verapdf_news_icon() {
+	$fa_icon = "fa-newspaper-o";
+	if ( in_category('releases') ) {
+		$fa_icon = "fa-bullhorn";
+	} elseif ( in_category('events') ) {
+		$fa_icon = "fa-users";
+	}
+	return $fa_icon;
+}
+endif;
+
 if ( ! function_exists( 'verapdf_masthead_lead' ) ) :
 /**
  * Template for masthead title.
