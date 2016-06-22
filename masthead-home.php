@@ -7,51 +7,25 @@
  * @package Verapdf
  */
 ?>
-			<header id="masthead" class="site-header mask" role="banner">
-			<?php // substitute the class "container-fluid" below if you want a wider content area ?>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="site-header-inner col-sm-12">
-							<h1 class="site-title"><?php bloginfo( 'description' ); ?></h1>
-							<p class="lead">
-							<?php $header_image = get_header_image();
-							if ( ! empty( $header_image ) ) { ?>
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-									<img src="<?php header_image(); ?>" class="shadowed" alt="The veraPDF logo" title="veraPDF logo" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>">
-								</a>
-							<?php } // end if ( ! empty( $header_image ) ) ?>
-						  </p>
-						</div>
-					</div><!-- .row -->
-					<div class="row showcase mask">
-            <div class="container">
-							<div class="col-lg-4">
-  							<i class="fa fa-info-circle fa-5x"></i>
-  							<h2>About veraPDF</h2>
-								<p class="lead">
-  								veraPDF is a definitive, open source PDF/A validator built with funding form the European Union&#8217;s PREFORMA project.
-  							</p>
-  							<p><a class="btn btn-lg btn-primary" href="#about" role="button">About Us&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a></p>
-  						</div>
-  						<div class="col-lg-4">
-  							<i class="fa fa-check-circle fa-5x"></i>
-  							<h2>PDF/A Validation</h2>
-  							<p class="lead">
-  								veraPDF software will validate all PDF/A parts &amp; conformance levels.
-  								Users can define further checks in order to enforce institutional policy.
-  							</p>
-  							<p><a class="btn btn-lg btn-primary" href="#validation" role="button">Validation&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a></p>
-  						</div>
-  						<div class="col-lg-4">
-  							<i class="fa fa-legal fa-5x"></i>
-  							<h2>Open Licensing</h2>
-								<p class="lead">
-  								veraPDF is dual-licensed under the GNU General Public License v3 or
-  								later (GPLv3+) and Mozilla Public License v2 or later (MPLv2+).
-  							</p>
-  							<p><a class="btn btn-lg btn-primary" href="#licensing" role="button">Licensing&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a></p>
-  						</div>
-            </div><!-- .container -->
+      <header id="masthead" class="site-header mask" role="banner">
+      <?php // substitute the class "container-fluid" below if you want a wider content area ?>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="site-header-inner col-sm-12">
+              <div class="container">
+                <p class="lead">
+                <?php $header_image = get_header_image();
+                if ( ! empty( $header_image ) ) { ?>
+                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                    <img src="<?php header_image(); ?>" class="shadowed" alt="The veraPDF logo" title="veraPDF logo" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>">
+                  </a>
+                <?php } // end if ( ! empty( $header_image ) ) ?>
+                </p>
+                <h1><?php bloginfo( 'description' ); ?></h1>
+                <p class="lead"><?php echo get_post_meta($wp_query->post->ID, 'tag-line', true); ?></p>
+                <p><a class="btn btn-lg btn-primary" href="http://downloads.verapdf.org/rel/verapdf-installer.zip" role="button">Download veraPDF&nbsp;<i class="fa fa-download"></i></a></p>
+              </div>
+            </div>
           </div><!-- .row -->
-				</div><!-- .container-fluid -->
-			</header><!-- #masthead -->
+        </div><!-- .container-fluid -->
+      </header><!-- #masthead -->
