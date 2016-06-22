@@ -13,9 +13,9 @@
 // Remember to do this for all content templates you want to have this,
 // for example content-single.php for the post single view. ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('panel'); ?>>
 	<header>
-		<h1 class="page-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		<h2 class="page-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><i class="fa <?php echo verapdf_news_icon(); ?> fa-border fa-pull-left fa-2x"></i> <?php the_title(); ?></a></h2>
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() || is_archive() ) : // Only display Excerpts for Search and Archive Pages ?>
@@ -23,8 +23,8 @@
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 	<?php else : ?>
-	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'verapdf' ) ); ?>
+	<div class="entry-summary">
+		<?php the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'verapdf' ) ); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'verapdf' ),
