@@ -262,19 +262,31 @@ display: block;
 /* veraPDF Extras */
 body {
 	background-image: url("./includes/img/vera-pages.jpg");
-	background-color: #000;
+	background-color: #fff;
+	color: #373d3f;
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 16px;
+}
+
+hr {
+	border-color: #c1c7c9;
+}
+#content, section.main-content > div.container {
+	padding-bottom: 0;
 }
 
 nav.site-navigation {
-	background-color: #fff;
+	background-color: #fffbfc;
 }
 
 .navbar-brand {
 	/* No lefft padding for menu brand */
 	padding-left: 0;
 }
-.navbar, .navbar-brand {
+
+#navbar, .navbar-brand {
 	margin-bottom: 0;
+	font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
   font-size: 18px;
 	font-weight: 400;
 }
@@ -282,81 +294,81 @@ nav.site-navigation {
 nav.site-navigation .container {
 	padding-bottom: 0;
 }
-.navbar-default .navbar-nav > li {
+
+.navbar-nav > li {
   navbar: inline-block;
 	margin-right: 20px;
+	float: right;
 }
 
+.navbar-toggle > span.icon-bar {
+	background-color: #D1293A;
+}
 a.navbar-brand,
-.navbar-default .navbar-nav > li > a {
+.navbar-nav > li > a {
+	color: #373d3f; /* IE8 proofing */
   padding-right: 0;
   padding-left: 0;
 	padding-top: 11px;
   border-top: 4px solid transparent;
 }
+
 a.navbar-brand {
 	margin-right: 20px;
+	padding-top: 0;
 }
-a.navbar-brand:hover,
-a.navbar-brand:focus,
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+
+a:visited {
+	color: #D1293A;
+}
+
+#main-menu {
+	margin-right: 30px;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
   background-color: transparent;
-  color: #D0404F; /* IE8 proofing */
-  color: rgba(208,64,79,.95);
-  border-top-color: #D0404F;
-  border-top-color: rgba(208,64,79,.5);
+  border-top-color: #D1293A;
+	color: #131516;
+  border-top-color: rgba(208,41,58,.5);
 }
-a.navbar-brand.active,
-a.navbar-brand.active:hover,
-a.navbar-brand.active:focus,
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
   background-color: #fff;
-	border-top-color: #D0404F;
-  border-top-color: rgba(208,64,79,1);
+	border-top-color: #D1293A;
+  border-top-color: rgba(209,41,58,1);
+	color: #131516;
 }
-a.navbar-brand.active:hover,
-a.navbar-brand.active:focus,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-color: #D0404F;
+
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+color: #131516;
+}
+
+div#menu-logo {
+	background-image: url("./includes/img/navbar-logo.png");
+	height: 38px;
+	width: 75px;
 }
 
 #masthead {
+	font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
 	color: #fff;
 	text-align: center;
-}
-
-#masthead.site-header .row {
-	padding: 2em 0;
-}
-
-#masthead .lead {
-  margin: 1em 0;
-}
-
-#masthead.page-header {
-	margin: 0;
-	padding: 1em 0;
-	border: none;
-}
-
-#masthead.page-header .lead {
-  margin: 1em 0;
-}
-
-#masthead ul {
-	text-align: left;
-}
-
-.showcase a, .showcase a:hover {
-	color: #ABE188;
+	padding: 0;
+	padding-top: 10px;
 }
 
 .showcase div {
+	text-align: center;
 	border-right: 1px;
+}
+
+.showcase i.fa-3x {
+	color: #D1293A;
 }
 
 section.main-content {
@@ -365,12 +377,12 @@ section.main-content {
 }
 
 .mask {
-	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 60%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.7)), color-stop(60%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 60%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 60%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 60%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 10%,rgba(0,0,0,0.7) 60%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
@@ -391,10 +403,24 @@ section.main-content {
 	filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
 }
 .site-footer {
-	background-color: #fff;
+	background-color: #38405a;
+	color: #fffbfc;
 	text-align: center;
+	padding-top: 10px;
+	border-top: 1px solid #c1c7c9;
 }
 
+.site-footer a,
+.site-footer a:visited {
+	color: #fffbfc;
+}
+site-footer ul {
+	margin-bottom: 0;
+}
+.site-footer hr {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
 .cc-info {
 	line-height: 1;
 }
@@ -405,32 +431,16 @@ section.main-content {
 .btn:focus {
   text-shadow: none; /* Prevent inheritence from `body` */
   border: 2px solid;
+	border-color: #fff;
+	color: #fffbfc;
   -webkit-border-radius: 10px;
      -moz-border-radius: 10px;
           border-radius: 10px;
 }
 
-.showcase i.fa-5x {
-	color: #ABE188;
-}
-
-.showcase .btn {
-	color: #fff;
-	background: none;
-	border-color: #fff;
-	font-weight: bold;
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
-
-.showcase .btn:hover {
-	background-color: #ABE188;
-	color: #000;
-}
-
 label i.fa-asterisk,
 .indicates-required i.fa-asterisk {
-	color: #D0404F;
+	color: #D1293A;
 }
 
 .indicates-required {
@@ -443,7 +453,7 @@ label i.fa-asterisk,
 
 div.mce_inline_error {
 	background: none;
-	color: #D0404F;
+	color: #D1293A;
 	text-align: right;
 	padding-right: 15px;
 }
@@ -451,6 +461,7 @@ div.mce_inline_error {
 
 section.main-content p > a:link {
 	text-decoration: underline;
+	color: #D0404F;
 }
 
 section.main-content h1,
@@ -459,7 +470,8 @@ section.main-content h3,
 section.main-content h4,
 section.main-content h5,
 section.main-content h6 {
-	color: #D0404F;
+	font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+	color: #131516;
 }
 
 section.main-content a > h1,
@@ -468,19 +480,7 @@ section.main-content a > h3,
 section.main-content a > h4,
 section.main-content a > h5,
 section.main-content a > h6 {
+	font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+	color: #D0404F;
 	text-decoration: underline;
-}
-
-li.subscribe {
-		float: right;
-}
-
-a[title="subscribe"],
-a[title="subscribe"]:hover {
-	margin-top: 4px;
-	border: none;
-	color: #587B7F;
-}
-a[title="subscribe"]:hover {
-  color: #4e6c70;
 }
